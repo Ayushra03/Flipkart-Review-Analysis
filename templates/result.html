@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body{
+            background-color: bisque;
+            align-items: center;
+            align-content: center;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-image: url('static/bg2.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .p{
+            color:green;
+        }
+        .n{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fetched Result</h1>
+    <h2>
+    {% if sentiment=="This is a POSITIVE Review"%}
+    This is a <div class="p">POSITIVE</div> Review
+    {% else%}
+    <!-- <h1> You are underage{{u_name}}</h-->
+    This is a <div class="n">NEGATIVE</div> Review
+    {% endif %}
+    </h2>
+</body>
+</html>

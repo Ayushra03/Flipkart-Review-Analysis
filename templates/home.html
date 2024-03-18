@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            /* background-color: bisque; */
+            align-items: center;
+            align-content: center;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-image: url('static/bg4.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        
+           
+        }
+        #btn{
+            margin-top: 20px;
+            background-color: coral;
+            padding-left:30px;
+            padding-right:30px;
+            color:azure;
+            border:none;
+            padding-top:10px;
+            padding-bottom:10px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: larger;
+            border-radius: 10px;
+
+
+
+        }
+    </style>
+</head>
+<body background="templates/bg.jpg">
+    <h1>Flipkart Review Sentiment Analysis</h1>
+    <form action="/prediction" ,method="post">
+        <h2>Enter the review</h2><input type="textarea" name="review" required><br>
+        <input type="submit" value="Predict" id="btn">
+    </form> <br>
+   <footer>
+    &#169; Ayush
+   </footer>
+</body>
+</html>
